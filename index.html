@@ -71,18 +71,22 @@
                         <div id="colunma-contacto">
                             <h1>Contactate con Nosotros!</h1>
                             <ul>
-                                <li><i class="las la-map-marker-alt"></i><span>CABA, Buenos Aires</span></li>
-                                <li><i class="las la-phone-alt"></i><span>11-2222-3333</span></li>
-                                <li><i class="las la-envelope"></i><span>rockola.music@website.com</span></li>
+                                <li><i class="las la-map-marker-alt" id="iconos"></i><span>CABA, Buenos Aires</span></li>
+                                <li><i class="las la-phone-alt" id="iconos"></i><span>11-2222-3333</span></li>
+                                <li><i class="las la-envelope" id="iconos"></i><span>rockola.music@website.com</span></li>
                             </ul>
                         </div>
                     </section>
                     <section>
                         <div id="columna-reclamo">
-                            <h1>Dejanos tu reclamo:</h3>
+                            <h1>Reclamo:</h3>
                                 <form>
                                     <p>
-                                        <label for="fullname">Nombre completo:</label>
+                                        <label for="fullname">Nombre:</label>
+                                        <input type="text" name="fullname" id="fullname"></input>
+                                    </p>
+                                    <p>
+                                        <label for="fullname">Apellido:</label>
                                         <input type="text" name="fullname" id="fullname"></input>
                                     </p>
                                     <p>
@@ -93,12 +97,12 @@
                                         <label>Telefono Fijo/Movil:</label>
                                         <input type="tel" name="phone" pattern="[0-9]{10}" required></input>
                                     </p>
-                                    <p>
+                                    <p class="en-bloque">
                                         <label>Dejanos tu mensaje:</label>
                                         <textarea name="message" rows="3"></textarea>
                                     </p>
-                                    <p>
-                                        <button type="submit">Enviar</button>
+                                    <p class="en-bloque">
+                                        <button type="submit" id="boton">Enviar</button>
                                     </p>
                                 </form>
                         </div>
