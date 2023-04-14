@@ -5,9 +5,10 @@
 }
 
 body {
-    background-color: gray;
+    background-color: white;
     margin: 0 auto;
 }
+
 
 header {
     background-color: rgb(240, 201, 96);
@@ -17,6 +18,7 @@ header {
     height: 80px;
     padding: 5px 10%;
     font-size: 17px;
+    font-weight: 800;
 }
 
 header *{
@@ -58,64 +60,57 @@ header a{
     transform: scale(1.2);
 }
 
-#main-aside {
-    width: 1000px;
-    background-color: white;
+
+.contenido {
     display: flex;
-    margin: auto;
+}
+
+.contenido * {
+    padding: 10px;
 }
 
 main {
+    background-color: antiquewhite;
     width: 70%;
+    margin: 10px;
+    border-radius: 15px;
+    border: 2px solid grey;
+}
+
+main section {
+    height: auto;
+    margin: 10px;
+    background-color: rgb(226, 222, 167);
+    border-radius: 15px;
 }
 
 
-#contenido {
-    width: 700px;
-    float: left;
-}
-
-#aside {
+aside {
     width: 30%;
     float: left;
-    background-color: green;
+    background-color: antiquewhite;
+    margin: 10px;
+    border-radius: 15px;
+    border: 2px solid grey;
 }
 
-
-#columna-1 {
-    width: 100%;
-    float: left;
-    background-color: yellow;
+aside section {
+    height: auto;
+    margin: 10px;
+    background-color: rgb(226, 222, 167);
+    border-radius: 15px;
 }
 
-#columna-2 {
-    width: 100%;
-    float: left;
-    background-color: violet;
+footer {
+    background-color: rgb(104, 47, 15);
+    height: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
 }
 
-#columna-3 {
-    width: 100%;
-    float: left;
-    background-color: red;
+footer p:hover{
+    color: white;
 }
-
-.contacto-tutilo{
-    padding-left: 150px;
-}
-
-.contacto-info ul li{
-    list-style: none;
-    padding-left: 5px;
-}
-
-.contacto-info ul li span{
-    padding-left: 5px;
-}
-
-#columna-4 {
-    width: 100%;
-    float: left;
-    background-color: blue;
-}
-
