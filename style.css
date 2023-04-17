@@ -242,3 +242,23 @@ footer p:hover{
     transform: scale(1.01);
 }
 
+/* foto banner */
+
+.foto-inicio {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-image: url(img/fondo\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.titulo-inicio {
+    font-family: 'Merienda', cursive;
+    font-size: 40px;
+    font-weight: 800;
+}
