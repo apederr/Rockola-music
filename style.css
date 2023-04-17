@@ -70,17 +70,15 @@ header a{
 }
 
 main {
-    background-color: antiquewhite;
     width: 70%;
     margin: 10px;
     border-radius: 15px;
-    border: 2px solid grey;
 }
 
 main section {
     height: auto;
     margin: 10px;
-    background-color: rgb(226, 222, 167);
+    background-color: antiquewhite;
     border-radius: 15px;
 }
 
@@ -88,16 +86,14 @@ main section {
 aside {
     width: 30%;
     float: left;
-    background-color: antiquewhite;
     margin: 10px;
     border-radius: 15px;
-    border: 2px solid grey;
 }
 
 aside section {
     height: auto;
     margin: 10px;
-    background-color: rgb(226, 222, 167);
+    background-color: antiquewhite;
     border-radius: 15px;
 }
 
@@ -135,9 +131,10 @@ footer p:hover{
 #columna-reclamo form textarea {
     width: 100%;
     padding: 2px;
-    border: none;
     outline: none;
-    background-color: rgb(185, 182, 134);
+    background-color: rgb(245, 244, 232);
+    border: 1px solid grey;
+    border-radius: 4px;
 }
 
 #columna-reclamo form button {
@@ -166,3 +163,82 @@ footer p:hover{
     font-size: 25px;
     color: brown;
 }
+
+/* fotos intrumentos */
+
+.teclado {
+    margin-top: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.teclado img{
+    height: 200px;
+    padding: 0px;
+    width: auto;
+    border: 1px solid grey;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.teclado img:hover{
+    transform: scale(1.01);
+}
+
+.bateria {
+    margin-top: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.bateria img{
+    height: 170px;
+    padding: 0px;
+    width: auto;
+    border: 1px solid grey;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.bateria img:hover{
+    transform: scale(1.01);
+}
+
+.guitarra {
+    margin-top: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.guitarra img{
+    height: 200px;
+    padding: 0px;
+    width: auto;
+    border: 1px solid grey;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.guitarra img:hover{
+    transform: scale(1.01);
+}
+
+.bongo {
+    margin-top: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.bongo img{
+    height: 200px;
+    padding: 0px;
+    width: auto;
+    border: 1px solid grey;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.bongo img:hover{
+    transform: scale(1.01);
+}
+
