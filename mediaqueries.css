@@ -1,0 +1,88 @@
+@media screen and (max-width: 990px) {
+
+    .nav-bar {
+        display: none;
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 90px;
+        padding: 18px 20px;
+    }
+
+    .nav-links a {
+        display: block;
+        text-align: center;
+        margin: 25px 5px;
+    }
+
+    .boton-mobile {
+        display: block;
+        cursor: pointer;
+    }
+
+
+    .active{
+        display: block;
+    }
+
+    /* pagina responsive */
+
+    .contenido {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contenido *{
+        margin: 20px 10px;
+        padding: 5px;
+    }
+
+
+    main {
+        width: 100%;
+        margin: auto;
+    }
+
+    aside {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    
+
+}
+
+
+
+@media screen and (max-width: 768px){
+    .nav-bar li{
+        display: block;
+    }
+
+    .contenido {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contenido *{
+        margin: 20px 10px;
+        padding: 5px;
+    }
+
+
+    main {
+        margin: auto;
+    }
+
+    #columna-reclamo form {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rockola</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,22 +28,24 @@
             <div id="logo">
                 <img src="img/logo-rockola.svg" alt="Rockola">
             </div>
-            <nav>
-                <div>
-                    <ul class="nav-links">
-                        <li class="">
-                            <a class="" href="#">ORGANIZACION</a>
-                        </li>
-                        <li class="">
-                            <a class="" href="#">QUIENES SOMOS</a>
-                        </li>
-                        <li class="">
-                            <a class="" href="#">CONTACTO</a>
-                        </li>
-                        <li class="">
-                            <a class="" href="#">RECLAMO</a>
-                        </li>
-                    </ul>
+            <div class="boton-mobile">
+                <i class="las la-bars btn"></i> Menú
+            </div>
+            <nav class="nav-bar">
+                <ul class="nav-links">
+                    <li class="">
+                        <a class="#" href="#columna-presentacion">ORGANIZACION</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="#columna-quien">QUIENES SOMOS</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="#columna-contacto">CONTACTO</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="#columna-reclamo">RECLAMO</a>
+                    </li>
+                </ul>
             </nav>
         </header>
         <div class="foto-inicio">
@@ -53,30 +56,26 @@
                 <article>
                     <section>
                         <div id="columna-presentacion">
-                            <h1>PRESENTACION</h1>
-                            <p>Lorem ipsum dolor sitd amet consectetur adipisicing elit. Accusantium laudantium optio
-                                veniam
-                                eos
-                                nisi
-                                qui. Veritatis, explicabo assumenda molestias beatae cupiditate itaque voluptas aliquam
-                                corrupti
-                                omnis laudantium
+                            <h1 class="titulo" id="titulo-centrado">PRESENTACION</h1>
+                            <p>Bienvenidos a Rockola una marca creada desde Julio del 2000 en el taller de una casa,
+                                con aspiración a seguir creciendo apostamos en nuestro futuro y desarrollamos una marca
+                                independiente con productos únicos.<br>
+                                Así nace rockola, produciendo instrumentos de gran calidad!
                             </p>
                         </div>
                     </section>
                     <section>
                         <div id="columna-quien">
-                            <h1>QUIENES SOMOS</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laudantium optio
-                                veniam
-                                eos
-                                nisi
-                                qui. Veritatis, explicabo assum!</p>
+                            <h1 class="titulo" id="titulo-centrado">¿QUIENES SOMOS?</h1>
+                            <p>Somos una empresa preparada para ofrecerte amplia selección de instrumentos únicos para
+                                producir tu música a tu estilo, brindando la mejor calidad al mejor precio.<br>
+                                Contamos con un grupo seleccionado de instrumentos elaborados de manera propia que
+                                brindan seguridad al cliente y el mejor sonido para su instrumento.</p>
                         </div>
                     </section>
                     <section>
-                        <div id="colunma-contacto">
-                            <h1>Contactate con Nosotros!</h1>
+                        <div id="columna-contacto">
+                            <h1 class="titulo">Contactate con Nosotros!</h1>
                             <ul>
                                 <li><i class="las la-map-marker-alt" id="iconos"></i><span>CABA, Buenos Aires</span>
                                 </li>
@@ -88,7 +87,7 @@
                     </section>
                     <section>
                         <div id="columna-reclamo">
-                            <h1>Reclamo:</h3>
+                            <h1 class="titulo">Reclamo:</h3>
                                 <form>
                                     <p>
                                         <label for="fullname">Nombre y Apellido:</label>
@@ -108,10 +107,10 @@
                                     </p>
                                     <p class="en-bloque">
                                         <label>Dejanos tu mensaje:</label>
-                                        <textarea name="message" rows="3"></textarea>
+                                        <textarea name="message" rows="3" id="texto"></textarea>
                                     </p>
                                     <p class="en-bloque">
-                                        <button type="submit" id="boton">Enviar</button>
+                                        <button href="javascript:genPDF" type="submit" id="boton">Enviar</button>
                                     </p>
                                 </form>
                         </div>
@@ -142,6 +141,25 @@
             <p>Todos los derechos reservados®</p>
         </footer>
     </div>
+    <script type="text/javascript" src="jspdf.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script type="text/javascript">
+        function genPDF(){
+            var doc = new jsPDF();
+            let texto = document.getElementById("texto").value;
+            doc.text(20, 20, text)
+            doc.save("MiDocumento.pdf")
+        };
+
+        $(document).ready(function () {
+            $(".boton-mobile").click(function(){
+                $(".nav-bar").toggleClass("active");
+            })
+        });
+    </script>
 </body>
 
 </html>
